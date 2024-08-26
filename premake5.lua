@@ -13,6 +13,7 @@ project "ImGui"
     }
 
     defines { "IMGUI_DISABLE_OBSOLETE_KEYIO" }
+    defines { "IMGUI_API=__declspec(dllexport)" }
 
     filter "system:windows"
         systemversion "latest"
