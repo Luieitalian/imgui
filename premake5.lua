@@ -12,6 +12,8 @@ project "ImGui"
       "*.h", "*.cpp"
     }
 
+    defines { "IMGUI_DISABLE_OBSOLETE_KEYIO" }
+
     filter "system:windows"
         systemversion "latest"
         staticruntime "On"
